@@ -16,6 +16,10 @@ body{
     background-color: rgb(180, 203, 247) !important;
 }
 
+#info{
+    color: whitesmoke;
+}
+
 @media screen and (max-width:1024px) {
     .box{
         height: 85vh;
