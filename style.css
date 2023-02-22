@@ -1,0 +1,26 @@
+body{
+    height: 100vh;
+    background-image: url(./back.jpg);
+    object-fit: cover;
+    background-repeat: no-repeat
+}
+
+.box{
+    height: 70vh;
+    position: absolute;
+	top:0;
+	bottom: 0;
+	left: 20%;
+	right: 20%;
+	margin: auto;
+    background-color: rgb(180, 203, 247) !important;
+}
+
+@media screen and (max-width:1024px) {
+    .box{
+        height: 85vh;
+        top: 80px;
+        left: 5%;
+        right: 5%;
+    }
+}

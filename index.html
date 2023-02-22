@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exchangerate API || Kesavan</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 class="text-center mt-3 text-light">Currency Converter</h1>
+    <form onsubmit="getConvertedValue(); return false">
+        <div class="container">
+            <div class="row box bg-white shadow text-center">
+                <div class="col-lg-6 col-md-6 col-sm-12 px-4">
+                    <h1 class="pt-md-4 pt-sm-2 text-primary">From</h1>
+                    <select class="form-control my-4" id="fromCurrency" required>
+                        <option value="" selected>-- Select --</option>
+                    </select>
+                    <input class="form-control my-4 d-inline-block" type="text" id="fromCurrencyAmount"
+                        placeholder="Amount" required>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 px-4">
+                    <h1 class="pt-md-4 pt-sm-2 text-primary">To</h1>
+                    <select class="form-control my-4" id="toCurrency" required>
+                        <option value="" selected>-- Select --</option>
+                    </select>
+                    <input class="form-control my-4 d-inline-block" type="text" id="toCurrencyAmount"
+                        placeholder="Converted Amount">
+                </div>
+                <div class="col-12">
+                    <h6 id="info"></h6>
+                </div>
+                <div class="col-12">
+                    <button type="submit" class="btn btn-primary mb-3 ">Convert</button>
+                </div>
+            </div>
+        </div>
+    </form>
+    <script src="script.js"></script>
+</body>
+
+</html>
